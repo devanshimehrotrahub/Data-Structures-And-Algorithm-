@@ -64,8 +64,12 @@ public class Graph {
     }
   }
 
-  public void bfs() {
-    bfsVisit(nodeList.get(0));
+ public void bfs() {
+    for (GraphNode node : nodeList) {
+      if (!node.isVisited) {
+        bfsVisit(node);
+      }
+    }
   }
 
   void dfsVisit(GraphNode node) {
@@ -90,6 +94,9 @@ public class Graph {
   }
 
   public void dfs() {
-    dfsVisit(nodeList.get(0));
-  }
+    for (GraphNode node : nodeList) {
+      if (!node.isVisited) {
+        dfsVisit(node);
+      }
+    }
 }
