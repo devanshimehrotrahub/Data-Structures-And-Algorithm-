@@ -18,7 +18,7 @@ public class Graph {
     AdjacencyMatrix[j][i] = 1;
   }
 
-  public void printAdjacencyMatrix() {
+  public void printGraph() {
     System.out.print("   ");
     for (int i = 0; i < nodeList.size(); i++) {
       System.out.print(nodeList.get(i).name + " ");
