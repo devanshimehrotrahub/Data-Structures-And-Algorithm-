@@ -44,7 +44,7 @@ public class Main {
         // g.addUndirectedEdge(4, 5);
         // g.addUndirectedEdge(5, 6);
 
-        // g.printList();
+        //  g.printGraph();
         // g.bfs();
         // g.dfs();
 
